@@ -2,6 +2,8 @@ var request = require('request');
 var cheerio = require('cheerio');
 var urlParse= require('url-parse');
 
+var request = request.defaults({jar: true})
+
 var path, authenticationInfo;
 var absLinks = [], relLinks = [];
 
@@ -55,7 +57,7 @@ function getAllLinks($){
 
 
 
-// main 
+// main
 requiredInformation();
 
 request(path, function(error, response, body) {
@@ -66,9 +68,10 @@ request(path, function(error, response, body) {
    
    if(response.statusCode === 200) {
 	    var $ = cheerio.load(body);
-	    console.log("Page title:  " + $('title'));
 	    getAllLinks($);
+	    console.log("\nabsolute Links");
 		console.log(absLinks);
+		console.log("\nrelative Links");
 		console.log(relLinks);
    }
 });
