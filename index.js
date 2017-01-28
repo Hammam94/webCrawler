@@ -7,9 +7,8 @@ var request = request.defaults({jar: true})
 var path, authenticationInfo;
 var absLinks = [], relLinks = [];
 
-
 function requiredInformation() {
-	path = process.argv[2];
+  path = process.argv[2];
 }
 
 /*
@@ -17,45 +16,17 @@ links types
 a, link => href
 img, script => src
 */
+var selectors = [ ['a', 'href'], ['link','href'], ['img', 'src'], ['script', 'src'] ];
 
-function getAbsLinks($){
-	$("a[href^='http']").each(function() {
-    	absLinks.push($(this).attr('href'));
-  	});
-  	$("link[href^='http']").each(function() {
-    	absLinks.push($(this).attr('href'));
-  	});
-	$("img[src^='http']").each(function() {
-    	absLinks.push($(this).attr('src'));
-  	});
-	$("script[src^='http']").each(function() {
-    	absLinks.push($(this).attr('src'));
-  	});
+function getAllLinksForTag($, tagName, attribute){
+  $(tagName).each(function() {
+    if($(this).attr(attribute).indexOf("http") == 0){
+      absLinks.push($(this).attr(attribute));
+    } else {
+      relLinks.push($(this).attr(attribute));
+    }
+  });
 }
-
-function getRelLinks($){
-	$("a[href^='/']").each(function() {
-    	relLinks.push($(this).attr('href'));
-  	});
-  	$("link[href^='/']").each(function() {
-    	relLinks.push($(this).attr('href'));
-  	});
-	$("img[src^='/']").each(function() {
-    	relLinks.push($(this).attr('src'));
-  	});
-	$("script[src^='/']").each(function() {
-    	relLinks.push($(this).attr('src'));
-  	});
-}
-
-function getAllLinks($){
-	getAbsLinks($);
-	getRelLinks($);
-}
-
-
-
-
 
 // main
 requiredInformation();
@@ -68,11 +39,15 @@ request(path, function(error, response, body) {
    
    if(response.statusCode === 200) {
 	    var $ = cheerio.load(body);
-	    getAllLinks($);
+
+      selectors.forEach(function each(selector){
+        getAllLinksForTag($, selector[0], selector[1]);
+      })
+
 	    console.log("\nabsolute Links");
-		console.log(absLinks);
-		console.log("\nrelative Links");
-		console.log(relLinks);
+  		console.log(absLinks);
+  		console.log("\nrelative Links");
+  		console.log(relLinks);
    }
 });
 
