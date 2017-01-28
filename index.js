@@ -19,10 +19,10 @@ img, script => src
 var selectors = [ ['a', 'href'], ['link','href'], ['img', 'src'], ['script', 'src'] ];
 
 function getAllLinksForTag($, tagName, attribute){
-  $(tagName).each(function() {
-    if($(this).attr(attribute).indexOf("http") == 0){
+  $(tagName).each(function() {    
+    if(typeof $(this).attr(attribute) != "undefined" && $(this).attr(attribute).indexOf("http") == 0){
       absLinks.push($(this).attr(attribute));
-    } else {
+    } else if(typeof $(this).attr(attribute) != "undefined"){
       relLinks.push($(this).attr(attribute));
     }
   });
