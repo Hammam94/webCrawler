@@ -30,7 +30,10 @@ function getAllLinksForTag($, tagName, attribute){
   });
 }
 
-
+function node() {                     //create the node 
+  this.url= null;
+  this.childrn= null;
+}
 
 // main
 requiredInformation();
@@ -48,9 +51,18 @@ request(path, function(error, response, body) {
        selectors.forEach(function each(selector){
           getAllLinksForTag($, selector[0], selector[1]);
         })
+       var root = new node;
+       root.url = path;
+       root.childrn = urls;
 
-  	    console.log("\nabsolute Links");
-    		console.log(urls);
+       console.log(root.childrn[0]);
+       console.log(root.childrn[1]);
+
+
+       //console.log(root);
+
+  	    //console.log("\nabsolute Links");
+    		//console.log(urls);
      }
    }
 });
