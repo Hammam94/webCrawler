@@ -4,9 +4,20 @@ var urlParse= require('url-parse');
 
 var path, authenticationInfo;
 var urls = [];
+var visted = [];
+var root = new node();
+var consMaxDepth = 2;// max depth of tree
+ 
+
+        
+      
 
 function requiredInformation() {
   path = process.argv[2];
+  root.url = path;
+console.log('check this');
+  console.log(root.url);
+  root.depth=1;
 }
 
 /*
@@ -30,15 +41,40 @@ function getAllLinksForTag($, tagName, attribute){
   });
 }
 
-function node() {                     //create the node 
+function node() {//create the node 
   this.url= null;
   this.childrn= null;
+  this.depth= null;
 }
 
-// main
-requiredInformation();
+function traverse(currentNode) {
+if(currentNode.depth >= consMaxDepth){
+  return;
+}
+if(currentNode.url.indexOf(root.url)!=0){
+  return;
+}
+if(isVisited(currentNode.url)){
+   return;
+  }
+visted[currentNode.url] = true;
+for(var i = 0 ; i< currentNode.childrn.length ; ++i){
+    var childNode = new node();
+    childNode.url = currentNode.childrn[i];
+    childNode.depth= currentNode.depth+1;
+    //visted[childNode.url]=true;
+    requests(childNode);
+    }
 
-request(path, function(error, response, body) {
+}
+
+
+function isVisited(path){
+  return visted[path];
+}
+
+function requests(currentNode){
+  request(currentNode.url, function(error, response, body) {
    if(error) {
      console.log("Error: " + error);
    }
@@ -46,26 +82,31 @@ request(path, function(error, response, body) {
      console.log("Status code: " + response.statusCode);
      
      if(response.statusCode === 200) {
-  	    var $ = cheerio.load(body);
+        var $ = cheerio.load(body);
 
        selectors.forEach(function each(selector){
           getAllLinksForTag($, selector[0], selector[1]);
         })
-       var root = new node;
-       root.url = path;
-       root.childrn = urls;
+        currentNode.childrn = urls;
+        console.log(currentNode.url);
+        traverse(currentNode)
 
-       console.log(root.childrn[0]);
-       console.log(root.childrn[1]);
-
-
+  
        //console.log(root);
 
-  	    //console.log("\nabsolute Links");
-    		//console.log(urls);
+       //console.log("\nabsolute Links");
+       //console.log(urls);
      }
    }
 });
+}
+// main
+requiredInformation();
+requests(root);
+
+
+
+
 
 
 
