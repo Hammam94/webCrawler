@@ -5,6 +5,7 @@
 	"dependencies": {
 		"cheerio": "^0.22.0",
     	"url-parse": "^1.1.7",
-    	"request": "^2.79.0"
+    	"request": "^2.79.0",
+    	"fs-extra": "^2.0.0"
 	}
 }
