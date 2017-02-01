@@ -16,7 +16,6 @@ function init() {
   filename = process.argv[3];
   if(!fileSystem.existsSync(filename)){
     fileSystem.createFileSync(filename);
-    console.log("not created");
   } 
   fileWriter = fileSystem.createWriteStream(filename);
   requests(root);
@@ -56,8 +55,6 @@ function traverse(currentNode) {
     childNode.url = currentNode.childrn[i];
     childNode.depth= currentNode.depth+1;
     visited[childNode.url] = true;
-    var u = childNode.url + "\n";
-    fileWriter.write(u);
     requests(childNode);
   }
 }
@@ -69,13 +66,39 @@ function requests(currentNode){
    } else {      
      if(response.statusCode == 200) {
         var $ = cheerio.load(body);
-
-       selectors.forEach(function each(selector){
+        fileWriter.write("statusCode: 200 Ok.\t : \t" +currentNode.url + "\n");
+        selectors.forEach(function each(selector){
           getAllPageLinksForTag($, selector[0], selector[1], currentNode.url);
         })
 
         currentNode.childrn = urls;
         traverse(currentNode)
+     } else if (response.statusCode == 201) {
+        fileWriter.write("statusCode: 201 Created.\t : \t" + currentNode.url + "\n");
+     } else if (response.statusCode == 301) {
+        fileWriter.write("statusCode: 301 Moved Permanently.\t : \t" + currentNode.url + "\n");
+     } else if (response.statusCode == 302) {
+        fileWriter.write("statusCode: 302 Found.\t : \t" + currentNode.url + "\n");
+     } else if (response.statusCode == 304) {
+        fileWriter.write("statusCode: 304 Not Modified.\t : \t" + currentNode.url + "\n");
+     } else if (response.statusCode == 400) {
+        fileWriter.write("statusCode: 400 Bad Request.\t : \t" + currentNode.url + "\n");
+     } else if (response.statusCode == 401) {
+        fileWriter.write("statusCode: 401 Unauthorized.\t : \t" + currentNode.url + "\n");
+     } else if (response.statusCode == 403) {
+        fileWriter.write("statusCode: 403 Forbidden.\t : \t" + currentNode.url + "\n");
+     } else if (response.statusCode == 404) {
+        fileWriter.write("statusCode: 404 Not Found.\t : \t" + currentNode.url + "\n");
+     } else if (response.statusCode == 405) {
+        fileWriter.write("statusCode: 405 Method Not Allowed.\t : \t" + currentNode.url + "\n");
+     } else if (response.statusCode == 413) {
+        fileWriter.write("statusCode: 413 Request Entity Too Large.\t : \t" + currentNode.url + "\n");
+     } else if (response.statusCode == 414) {
+        fileWriter.write("statusCode: 414 Request URL Too Long.\t : \t" + currentNode.url + "\n");
+     } else if (response.statusCode == 500) {
+        fileWriter.write("statusCode: 500 Internal Server Error.\t : \t" + currentNode.url + "\n");
+     } else if (response.statusCode == 503) {
+        fileWriter.write("statusCode: 503 Service Unavailable.\t : \t" + currentNode.url + "\n");
      }
    }
   });

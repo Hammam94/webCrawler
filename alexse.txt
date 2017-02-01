@@ -1,22 +1,23 @@
-http://alexse.com/feed
-http://alexse.com/forget-password
-http://alexse.com/login/facebook
-http://alexse.com/contact-us
-http://alexse.com/bower_components/materialize/dist/css/materialize.min.css
-http://alexse.com/bower_components/font-awesome/css/font-awesome.min.css
-http://alexse.com/bower_components/material-design-icons/iconfont/material-icons.css
-http://alexse.com/bower_components/sweetalert2/dist/sweetalert2.min.css
-http://alexse.com/css/homePage.css
-http://alexse.com/css/home_tagline.css
-http://alexse.com/css/home_input.css
-http://alexse.com/favicon.ico
-http://alexse.com/image/parallax1.jpg
-http://alexse.com/image/logo.png
-http://alexse.com/bower_components/jquery/dist/jquery.min.js
-http://alexse.com/bower_components/materialize/dist/js/materialize.min.js
-http://alexse.com/bower_components/jquery.nicescroll/dist/jquery.nicescroll.min.js
-http://alexse.com/bower_components/sweetalert2/dist/sweetalert2.min.js
-http://alexse.com/js/homePage.js
-http://alexse.com/js/home_tagline.js
-http://alexse.com/js/registration.js
-http://alexse.com/js/login.js
+statusCode: 200 Ok.	 : 	http://alexse.com
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/material-design-icons/iconfont/material-icons.css
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/sweetalert2/dist/sweetalert2.min.css
+statusCode: 200 Ok.	 : 	http://alexse.com/css/home_tagline.css
+statusCode: 200 Ok.	 : 	http://alexse.com/favicon.ico
+statusCode: 200 Ok.	 : 	http://alexse.com/css/home_input.css
+statusCode: 200 Ok.	 : 	http://alexse.com/js/homePage.js
+statusCode: 200 Ok.	 : 	http://alexse.com/css/homePage.css
+statusCode: 200 Ok.	 : 	http://alexse.com/forget-password
+statusCode: 200 Ok.	 : 	http://alexse.com/js/login.js
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/materialize/dist/css/materialize.min.css
+statusCode: 200 Ok.	 : 	http://alexse.com/js/registration.js
+statusCode: 200 Ok.	 : 	http://alexse.com/js/home_tagline.js
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/materialize/dist/js/materialize.min.js
+statusCode: 200 Ok.	 : 	http://alexse.com/contact-us
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/font-awesome/css/font-awesome.min.css
+statusCode: 200 Ok.	 : 	http://alexse.com/image/logo.png
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/jquery/dist/jquery.min.js
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/jquery.nicescroll/dist/jquery.nicescroll.min.js
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/sweetalert2/dist/sweetalert2.min.js
+statusCode: 200 Ok.	 : 	http://alexse.com/feed
+statusCode: 200 Ok.	 : 	http://alexse.com/login/facebook
+statusCode: 200 Ok.	 : 	http://alexse.com/image/parallax1.jpg
