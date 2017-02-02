@@ -1,23 +1,105 @@
 statusCode: 200 Ok.	 : 	http://alexse.com
 statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/material-design-icons/iconfont/material-icons.css
-statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/sweetalert2/dist/sweetalert2.min.css
-statusCode: 200 Ok.	 : 	http://alexse.com/css/home_tagline.css
-statusCode: 200 Ok.	 : 	http://alexse.com/favicon.ico
-statusCode: 200 Ok.	 : 	http://alexse.com/css/home_input.css
-statusCode: 200 Ok.	 : 	http://alexse.com/js/homePage.js
 statusCode: 200 Ok.	 : 	http://alexse.com/css/homePage.css
-statusCode: 200 Ok.	 : 	http://alexse.com/forget-password
-statusCode: 200 Ok.	 : 	http://alexse.com/js/login.js
-statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/materialize/dist/css/materialize.min.css
-statusCode: 200 Ok.	 : 	http://alexse.com/js/registration.js
-statusCode: 200 Ok.	 : 	http://alexse.com/js/home_tagline.js
-statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/materialize/dist/js/materialize.min.js
-statusCode: 200 Ok.	 : 	http://alexse.com/contact-us
+statusCode: 200 Ok.	 : 	http://alexse.com/css/home_input.css
+statusCode: 200 Ok.	 : 	http://alexse.com/favicon.ico
+statusCode: 200 Ok.	 : 	http://alexse.com/css/home_tagline.css
 statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/font-awesome/css/font-awesome.min.css
+statusCode: 200 Ok.	 : 	http://alexse.com/js/homePage.js
+statusCode: 200 Ok.	 : 	http://alexse.com/js/login.js
 statusCode: 200 Ok.	 : 	http://alexse.com/image/logo.png
-statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/jquery/dist/jquery.min.js
-statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/jquery.nicescroll/dist/jquery.nicescroll.min.js
+statusCode: 200 Ok.	 : 	http://alexse.com/js/registration.js
+statusCode: 200 Ok.	 : 	http://alexse.com/contact-us
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/materialize/dist/css/materialize.min.css
+statusCode: 200 Ok.	 : 	http://alexse.com/js/home_tagline.js
+statusCode: 200 Ok.	 : 	http://alexse.com/forget-password
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/sweetalert2/dist/sweetalert2.min.css
 statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/sweetalert2/dist/sweetalert2.min.js
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/bootstrap-select/dist/css/bootstrap-select.min.css
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/sweetalert2/dist/sweetalert2.min.css
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/jquery-ujs/src/rails.js
+statusCode: 200 Ok.	 : 	http://alexse.com/css/forgetPassword.css
+statusCode: 200 Ok.	 : 	http://alexse.com/js/forgetPassword.js
+statusCode: 200 Ok.	 : 	http://alexse.com/image/alexse-logo.png
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/bootstrap-select/dist/js/bootstrap-select.min.js
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/jquery.nicescroll/dist/jquery.nicescroll.min.js
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/bootstrap/dist/js/bootstrap.min.js
 statusCode: 200 Ok.	 : 	http://alexse.com/feed
 statusCode: 200 Ok.	 : 	http://alexse.com/login/facebook
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/sweetalert2/dist/sweetalert2.min.js
+statusCode: 200 Ok.	 : 	http://alexse.com/feed
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/jquery/dist/jquery.min.js
+statusCode: 200 Ok.	 : 	http://alexse.com/login/facebook
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/jquery/dist/jquery.min.js
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/jquery/dist/jquery.min.js
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//reg/
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//mobile
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/sweetalert2/dist/sweetalert2.min.js
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//login/
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//mobile/?ref=pf
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//directory/people/
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/sweetalert2/dist/sweetalert2.min.css
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//directory/pages/
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//places/
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//directory/groups/
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//games/
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//facebook
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//campaign/landing.php?placement=pflo&campaign_id=402047449186&extra_1=auto
+statusCode: 200 Ok.	 : 	https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/elsDHM2gf2R.css
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//settings
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//allactivity?privacy_source=activity_log_top_menu
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//osd.xml
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//r.php
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//careers/?ref=pf
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//policies/cookies/
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//help/?ref=pf
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//privacy/explanation
+statusCode: 200 Ok.	 : 	https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/a_-TkEYmVv9.css
+statusCode: 200 Ok.	 : 	https://static.xx.fbcdn.net/rsrc.php/v3/yh/r/ly3pRGF0D4y.css
+statusCode: 200 Ok.	 : 	https://static.xx.fbcdn.net/rsrc.php/yV/r/hzMapiNYYpW.ico
+statusCode: 200 Ok.	 : 	https://pt-br.facebook.com/unsupportedbrowser
+statusCode: 200 Ok.	 : 	https://en-gb.facebook.com/unsupportedbrowser
+statusCode: 200 Ok.	 : 	https://static.xx.fbcdn.net/rsrc.php/v3/yW/r/dYLnN7znE7A.css
+statusCode: 200 Ok.	 : 	https://de-de.facebook.com/unsupportedbrowser
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//directory/celebrities/
+statusCode: 200 Ok.	 : 	https://es-la.facebook.com/unsupportedbrowser
+statusCode: 200 Ok.	 : 	https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.mozilla.org%2Ffirefox%2Fnew%2F%3Futm_source%3Dfacebook%26utm_medium%3Dreferral%26utm_campaign%3Dunsupported-browser-notification&h=ATPxTzmB9UJq6QyudxtGuR1VUv5598TMyICHaBD_APcqxb06_cGH__TC0scaS3f7HMFBWcNiO9WbrCK7lWUTwocxKro2dEDzVGoXuXUS7VtYZS6Wj80dWHI&s=1
+statusCode: 200 Ok.	 : 	https://hi-in.facebook.com/unsupportedbrowser
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//pages/create/?ref_type=sitefooter
+statusCode: 200 Ok.	 : 	https://www.facebook.com/unsupportedbrowser
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//find-friends?ref=pf
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//lite/
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//policies?ref=pf
+statusCode: 200 Ok.	 : 	https://developers.facebook.com/?ref=pf
+statusCode: 200 Ok.	 : 	https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/XVv1sDq9Nu-.css
+statusCode: 200 Ok.	 : 	https://id-id.facebook.com/unsupportedbrowser
+statusCode: 200 Ok.	 : 	https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/lkg-HZZbJ3y.css
+statusCode: 200 Ok.	 : 	http://l.facebook.com/l.php?u=http%3A%2F%2Fmomentsapp.com%2F&h=ATPpbhEufwLWVP5KENC8clGvsNMimD-i9ofSYreHjaga8rQz_JtrCn11TFUBdrfUx4wVecndH6FkVwMSB_pGV8fzBxG4ZDR0zMbOwnEc26to4iKi0LshvRs&s=1
+statusCode: 200 Ok.	 : 	https://www.facebook.com/unsupportedbrowser
+statusCode: 200 Ok.	 : 	http://l.facebook.com/l.php?u=http%3A%2F%2Fwindows.microsoft.com%2Fen-US%2Finternet-explorer%2Fdownloads%2Fie&h=ATO6lzrDivAVmOWjKujMF-CVxJG2XIxWL4Q_JnG8vqRlyf7iqGj3CyI6ewvYw1_AN6NWNAqtk-kAYdFiZuvsaFbkJIzhJosyJETCeJNpAHSjTXY9Ds4HrqQ&s=1
+statusCode: 200 Ok.	 : 	https://ru-ru.facebook.com/unsupportedbrowser
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/jquery/dist/jquery.min.js
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/materialize/dist/js/materialize.min.js
+statusCode: 200 Ok.	 : 	https://www.facebook.com/help/568137493302217
+statusCode: 200 Ok.	 : 	https://it-it.facebook.com/unsupportedbrowser
+statusCode: 200 Ok.	 : 	https://fr-fr.facebook.com/unsupportedbrowser
+statusCode: 200 Ok.	 : 	https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/JtlnqH_nYpe.css
+statusCode: 200 Ok.	 : 	https://static.xx.fbcdn.net/rsrc.php/v3/yt/r/QoEMtvOoYOB.js
+statusCode: 200 Ok.	 : 	http://l.facebook.com/l.php?u=http%3A%2F%2Fwww.google.com%2Fchrome%2F&h=ATPFALrEVcKFuYiE7W6dRQ_9enJpI8tbDNQk17yTmgGjL6_kZWEerniFURYwXrNiqZ5VlZFJawRjisG9bVm2-msjqP5giSwQsvuiIUkPK4WWMa4cVG2McMM&s=1
+statusCode: 200 Ok.	 : 	https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2F&h=ATMYoNcSF_eMGeUg-pW3IfJxY0Nzy598d-mi88zVVGVjETinjjO_hC_CZ1huoFNunMBKhlGWmubvztHDN0if1vU88yWfshuHM2Q9h2bZMYhnwkF2ilIXJtY&s=1
+statusCode: 200 Ok.	 : 	https://www.facebook.com/
+statusCode: 200 Ok.	 : 	http://alexse.com/login/facebook//
+statusCode: 200 Ok.	 : 	https://www.facebook.com/recover/initiate?lwv=110
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/materialize/dist/js/materialize.min.js
+statusCode: 200 Ok.	 : 	https://tr-tr.facebook.com/unsupportedbrowser
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/bootswatch/simplex/bootstrap.min.css
+statusCode: 404 Not Found.	 : 	http://alexse.com/bower_components/materialize/dist/js/materialize.min.js/'+a.image+'
+statusCode: 404 Not Found.	 : 	http://alexse.com/bower_components/materialize/dist/js/materialize.min.js/'+g+'
+statusCode: 404 Not Found.	 : 	http://alexse.com/bower_components/materialize/dist/js/materialize.min.js/'+d[h]+'
+statusCode: 404 Not Found.	 : 	http://alexse.com/bower_components/materialize/dist/js/materialize.min.js/'+g+'
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/jquery.nicescroll/dist/jquery.nicescroll.min.js
+statusCode: 200 Ok.	 : 	https://messenger.com/
+statusCode: 200 Ok.	 : 	http://alexse.com/bower_components/materialize/dist/js/materialize.min.js
+statusCode: 404 Not Found.	 : 	http://alexse.com/login/facebook//directory/places/
+statusCode: 200 Ok.	 : 	http://alexse.com/image/parallax1.jpg
 statusCode: 200 Ok.	 : 	http://alexse.com/image/parallax1.jpg

@@ -24,7 +24,7 @@ function init() {
 //create the node
 function node() { 
   this.url= null;
-  this.childrn= null;
+  this.childrn= [];
   this.depth= null;
 }
 
@@ -35,26 +35,26 @@ img, script => src
 */
 var selectors = [ ['a', 'href'], ['link','href'], ['img', 'src'], ['script', 'src'] ];
 
-function getAllPageLinksForTag($, tagName, attribute, path){
+function getAllPageLinksForTag($, tagName, attribute, currentNode){
   $(tagName).each(function() {
     if(typeof $(this).attr(attribute) != "undefined" && $(this).attr(attribute).indexOf("http") == 0){
-      urls.push($(this).attr(attribute));
+      currentNode.childrn.push($(this).attr(attribute));
     } else if(typeof $(this).attr(attribute) != "undefined" && !($(this).attr(attribute).indexOf("#") == 0)){
-      path[path.length - 1] != '/'? urls.push(path + '/' + $(this).attr(attribute)): urls.push(path + $(this).attr(attribute));
+      currentNode.url[currentNode.url.length - 1] != '/'? currentNode.childrn.push(currentNode.url + '/' + $(this).attr(attribute)): currentNode.childrn.push(currentNode.url + $(this).attr(attribute));
     }
   });
 }
 
 
 function traverse(currentNode) {
+  console.log ((currentNode.depth >= consMaxDepth) + " : " + visited[currentNode.url] + " : " + currentNode.url);
   if(currentNode.depth >= consMaxDepth || visited[currentNode.url]) return;
-
+    visited[currentNode.url] = true;
   for(var i = 0 ; i< currentNode.childrn.length ; ++i){
-    if(visited[currentNode.childrn[i]]) continue;
+    if(visited[currentNode.childrn[i]] == true) continue;
     var childNode = new node();
     childNode.url = currentNode.childrn[i];
     childNode.depth= currentNode.depth+1;
-    visited[childNode.url] = true;
     requests(childNode);
   }
 }
@@ -66,12 +66,12 @@ function requests(currentNode){
    } else {      
      if(response.statusCode == 200) {
         var $ = cheerio.load(body);
+
         fileWriter.write("statusCode: 200 Ok.\t : \t" +currentNode.url + "\n");
         selectors.forEach(function each(selector){
-          getAllPageLinksForTag($, selector[0], selector[1], currentNode.url);
+          getAllPageLinksForTag($, selector[0], selector[1], currentNode);
         })
 
-        currentNode.childrn = urls;
         traverse(currentNode)
      } else if (response.statusCode == 201) {
         fileWriter.write("statusCode: 201 Created.\t : \t" + currentNode.url + "\n");
