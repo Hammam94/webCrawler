@@ -5,4 +5,5 @@ node js tool to crawl unauthenticated website.
 
 ##usage
 -`node crawler.js [website url] [filename] [number of levels (optional)]`
--it will create a result file in the same directory
+
+it will create a result file in the same directory
